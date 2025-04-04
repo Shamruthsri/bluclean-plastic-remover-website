@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Bluclean - Cleaning Water Bodies from Plastic</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">Blu<span>clean</span></a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#" class="btn btn-secondary" id="volunteer-btn"
+                >Become a Volunteer</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span>&#9776;</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Cleaning Water Bodies from Plastic Waste</h1>
+          <p>
+            Our innovative boat technology helps remove plastic waste from
+            ponds, lakes, and other water bodies, preserving aquatic ecosystems
+            for future generations.
+          </p>
+          <a href="#contact" class="btn">Request Our Service</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Bluclean</h2>
+          <p>
+            We are dedicated to removing plastic pollution from water bodies
+            using our specialized boat technology and community-driven approach.
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Our Mission</h3>
+            <p>
+              Bluclean was founded with the mission to tackle the growing
+              problem of plastic pollution in our water bodies. Every year,
+              millions of tons of plastic waste end up in lakes, ponds, and
+              rivers, threatening aquatic life and ecosystems.
+            </p>
+            <p>
+              Our innovative boat technology allows us to efficiently collect
+              plastic waste from water surfaces without harming marine life. The
+              collected plastic is then properly recycled or disposed of through
+              our network of environmental organizations and dedicated
+              volunteers.
+            </p>
+            <p>
+              Whether you're a private owner of a pond or a community member
+              concerned about a public lake, Bluclean can help restore your
+              water body to its natural state.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="./assets/images.jpg"
+              alt="Bluclean boat collecting plastic"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <p>
+            We offer comprehensive solutions for plastic waste removal from
+            various types of water bodies.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="./assets/pond.jpg" alt="Private Pond Cleaning" />
+            </div>
+            <div class="service-content">
+              <h3>Private Pond Cleaning</h3>
+              <p>
+                We help private landowners clean their ponds from accumulated
+                plastic waste, restoring the natural beauty and health of their
+                water features.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img">
+              <img src="./assets/lake.jpg" alt="Lake Restoration" />
+            </div>
+            <div class="service-content">
+              <h3>Lake cleaning</h3>
+              <p>
+                Our team works with communities to clean public lakes, removing
+                surface plastics and improving water quality for both wildlife
+                and recreational use.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img">
+              <img
+                src="./assets/plastic_collecting.jpg"
+                alt="Plastic Recycling"
+              />
+            </div>
+            <div class="service-content">
+              <h3>Plastic Removal</h3>
+              <p>
+                All collected plastic is sorted and sent to appropriate
+                recycling facilities or upcycling initiatives, ensuring minimal
+                environmental impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>
+            Get in touch to request our services or learn more about how you can
+            help in our mission.
+          </p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <div class="contact-details">
+              <a href="mailto:shamrutha.sri@gmail.com"
+                ><i>📧</i> shamrutha.sri@gmail.com</a
+              >
+              <p><i>📱</i>9431341156</p>
+              <p><i></i></p>
+            </div>
+            <h3>Quick Contact via WhatsApp</h3>
+            <a
+              href="https://wa.me/9431341156"
+              class="btn btn-secondary"
+              style="margin-bottom: 30px"
+              >Chat on WhatsApp</a
+            >
+          </div>
+          <div class="contact-form d-none">
+            <h3>Service Request Form</h3>
+            <form id="serviceForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="waterbody">Type of Water Body</label>
+                <select id="waterbody" name="waterbody" required>
+                  <option value="">Select one...</option>
+                  <option value="private-pond">Private Pond</option>
+                  <option value="community-lake">Community Lake</option>
+                  <option value="public-lake">Public Lake</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="location">Approximate Location</label>
+                <input type="text" id="location" name="location" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea id="message" name="message"></textarea>
+              </div>
+              <button type="submit" class="btn">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Modal -->
+    <div class="modal" id="volunteerModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="volunteer-form">
+          <h3>Volunteer Registration</h3>
+          <form id="volunteerForm">
+            <div class="form-group">
+              <label for="vol-name">Full Name</label>
+              <input type="text" id="vol-name" name="vol-name" required />
+            </div>
+            <div class="form-group">
+              <label for="vol-email">Email Address</label>
+              <input type="email" id="vol-email" name="vol-email" required />
+            </div>
+            <div class="form-group">
+              <label for="vol-phone">Phone Number</label>
+              <input type="tel" id="vol-phone" name="vol-phone" required />
+            </div>
+            <div class="form-group">
+              <label for="vol-location">Your Location (City/Area)</label>
+              <input
+                type="text"
+                id="vol-location"
+                name="vol-location"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="vol-availability">Availability</label>
+              <select id="vol-availability" name="vol-availability" required>
+                <option value="">Select your availability...</option>
+                <option value="weekdays">Weekdays</option>
+                <option value="weekends">Weekends</option>
+                <option value="both">Both</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vol-transport"
+                >Do you have transportation to carry collected plastic?</label
+              >
+              <select id="vol-transport" name="vol-transport" required>
+                <option value="">Select one...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vol-experience"
+                >Any previous experience with environmental work?</label
+              >
+              <textarea id="vol-experience" name="vol-experience"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary">
+              Register as Volunteer
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <a href="#" class="footer-logo">Blu<span>clean</span></a>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" id="footer-volunteer-btn">Volunteer</a></li>
+        </ul>
+        <p class="copyright">
+          &copy; 2023 Bluclean. All rights reserved. Dedicated to cleaner water
+          bodies.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
